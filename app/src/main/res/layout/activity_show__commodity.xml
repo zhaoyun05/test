@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Show_Commodity">
+    <include layout="@layout/show_commodity_top_bar"/>
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:paddingBottom="15dp">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:paddingRight="20dp"
+           android:paddingLeft="20dp"
+           android:orientation="vertical">
+           <ImageView
+               android:id="@+id/dis_img"
+               android:layout_width="match_parent"
+               android:layout_height="300dp"
+               android:background="@color/colorWhite"
+               android:src="@drawable/zanwu"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textColor="@color/textcolor"
+               android:layout_marginTop="10dp"
+               android:id="@+id/show_title"
+               android:textSize="25dp"
+               android:textStyle="bold"
+               android:text="商品标题"/>
+
+           <View
+               android:id="@+id/view"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" />
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textColor="@color/textcolor"
+               android:id="@+id/show_introduction"
+               android:text="我是商品的内容我是商品的内容我是商品的内容简介"
+               android:textSize="18dp"/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textColor="@color/textcolor"
+               android:id="@+id/show_model"
+               android:text="我是商品的规格"
+               android:textSize="18dp"
+               />
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:paddingTop="5dp">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/show_original_price"
+                   android:textSize="20dp"
+                   android:text="￥200.0"
+                   android:textColor="@color/coloRerr"
+                   />
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_toRightOf="@id/show_original_price"
+                   android:id="@+id/show_discount_price"
+                   android:layout_marginLeft="20dp"
+                   android:textSize="20dp"
+                   android:text="￥3000.0"
+                   android:textColor="#8C8C8C"
+                   />
+
+           </RelativeLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="2dp"
+               android:layout_marginTop="10dp"
+               android:background="#CCCCCC"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:paddingTop="10dp"
+               android:layout_height="wrap_content"
+               android:id="@+id/show_Details"
+               android:textColor="@color/textcolor"
+               android:text="我是商品的详情信息"
+               android:textSize="18dp"
+               />
+
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+
+               android:paddingTop="15dp"
+               android:orientation="horizontal">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="25dp"
+                   android:text="厂家:"
+                   android:textColor="@color/textcolor"
+                   android:textSize="15dp" />
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/show_factory"
+                   android:layout_marginLeft="10dp"
+                   android:textSize="15dp"
+                   android:gravity="center"
+                   android:textColor="@color/textcolor"
+                   android:text="我是商品厂家我是韩品厂家我是商品厂家我是商品"
+                   />
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textSize="15dp"
+                   android:textColor="@color/textcolor"
+                   android:text="地址:"
+                   />
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/show_address"
+                   android:layout_marginLeft="10dp"
+                   android:textSize="15dp"
+                   android:gravity="center"
+                   android:textColor="@color/textcolor"
+                   android:text="我是商品厂家我是韩品厂家我是商品厂家我是商品"
+                   />
+
+           </LinearLayout>
+       </LinearLayout>
+   </ScrollView>
+
+
+
+</LinearLayout>
